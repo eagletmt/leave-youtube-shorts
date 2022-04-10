@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "leave-youtube-shorts",
+  "description": "Leave YouTube shorts page and return to good old watch page",
+  "version": "1.0.1",
+  "applications": {
+    "gecko": {
+      "id": "leave-youtube-shorts@wanko.cc"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/shorts/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
